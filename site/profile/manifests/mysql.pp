@@ -6,7 +6,7 @@ class profile::mysql {
 
   mysql::db { 'wordpress':
     user     => 'wordpress',
-    password => 'puppetlabs',
+    password => 'wordpress',
     host     => 'localhost',
     grant    => ['ALL'],
   }
