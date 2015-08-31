@@ -6,9 +6,11 @@ class role::wordpress {
   
   class { 'profile::apache': }
 
+  package { 'php5-mysql': }
+
   class { 'wordpress':
     db_user        => 'wordpress',
-    db_password    => 'wordpress',
+    db_password    => 'puppetlabs',
     create_db      => false,
     create_db_user => false,
   }

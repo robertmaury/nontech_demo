@@ -6,8 +6,8 @@ class profile::mysql {
 
   mysql::db { 'wordpress':
     user     => 'wordpress',
-    password => 'wordpress',
+    password => 'puppetlabs',
     host     => 'localhost',
-    grant    => ['SELECT', 'UPDATE'],
+    grant    => ['ALL'],
   }
 }
